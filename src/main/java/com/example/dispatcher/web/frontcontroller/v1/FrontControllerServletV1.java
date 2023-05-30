@@ -32,8 +32,6 @@ public class FrontControllerServletV1 extends HttpServlet {
 
         ControllerV1 controllerV1 = controllerMap.get(requestURI);
         if (controllerV1 == null){
-
-
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
